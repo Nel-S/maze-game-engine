@@ -1,18 +1,20 @@
 from math import ceil, log10, prod
 from random import Random
+from typing import Literal
 
-from Maze import Maze
-from MazeObjects.User import User
-from MazeObjects.PointOfInterest import PointOfInterest
-from Settings import *
+import maze_game_engine as mge
+
+DIMENSIONS: Literal[1, 2, 3, 4, 5, 6, 7, 8] = 4 # Number of dimensions the maze expands into. 
+MAX_EDGE_LENGTH: int = 3 # Maximum edge length of maze
+SEED: int | None = None # (Optional) Seed for the pseudorandom number generators.
 
 prng: Random = Random(SEED)
 
-maze = Maze(DIMENSIONS, (ceil(MAX_EDGE_LENGTH/2), MAX_EDGE_LENGTH), seed=prng.getrandbits(64))
+maze = mge.Maze(DIMENSIONS, (ceil(MAX_EDGE_LENGTH/2), MAX_EDGE_LENGTH), seed=prng.getrandbits(64))
 AVAILABLE_MARKS = int(5 * log10(prod(maze.edgeLengths))) # Maximum number of rooms that can be marked simultaneously
 
-player = User("player", maze, markers=AVAILABLE_MARKS, seed=prng.getrandbits(64))
-exit = PointOfInterest("exit", maze, seed=prng.getrandbits(64), requireEdge=True)
+player = mge.User("player", maze, markers=AVAILABLE_MARKS, seed=prng.getrandbits(64))
+exit = mge.PointOfInterest("exit", maze, seed=prng.getrandbits(64), requireEdge=True)
 while player.location == exit.location: player.placeRandomly()
 
 # Prints instructions

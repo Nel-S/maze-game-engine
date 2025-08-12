@@ -33,7 +33,7 @@ class Maze:
 		('Forwards in Time Across the Multiverse', 'Backwards in Time Across the Multiverse')
 	)
 
-	def __init__(self, dimension: int, edgeLengthsRange: int | tuple[int, int], *, seed: int | None = None) -> None:
+	def __init__(self, dimension: Literal[1, 2, 3, 4, 5, 6, 7, 8], edgeLengthsRange: int | tuple[int, int], *, seed: int | None = None) -> None:
 		if dimension > len(self.ABSOLUTE_DIRECTIONS): raise ValueError(f"Dimension is larger than largest-supported dimension ({len(self.ABSOLUTE_DIRECTIONS)}).")
 
 		self._prng = Random(seed)

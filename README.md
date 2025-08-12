@@ -1,17 +1,16 @@
 # Maze
-This is a maze game that also served as my first GitHub repository (in October of 2021, although the code has been drastically improved since then).
+This is a basic engine for maze games. Currently, it supports mazes between one and eight dimensions; a user; and exit points.
 
-It supports mazes between one and eight dimensions.
+This library has also served as my first GitHub repository (in 2021) and my first PyPi package (in 2025).
 
 ## Installation and Usage
 1. Install [Python 3.10 or above](https://www.python.org/downloads) alongside its pip package manager.
-2. Clone or download+extract this repository.
-3. Open a terminal of your choice and install the required libraries:
+2. Open a terminal of your choice and install the library:
 ```bash
-pip install -r "[your/path/to/]requirements.txt" -U
+pip install maze-game-engine -U
 ```
-4. Open [Settings.py](Settings.py) in your editor of choice, and adjust the game's settings as desired.
-5. Launch the game.
-```bash
-py "[your/path/to/]Main.py"
+3. The library can now be imported to your projects and invoked as desired:
+```py
+import maze_game_engine as mge
+...
 ```

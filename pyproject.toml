@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "maze-game-engine"
-version = "0.2a5"
+version = "0.1"
 authors = [
     {name="Nel. S.", email="75831544+Nel-S@users.noreply.github.com"},
 ]

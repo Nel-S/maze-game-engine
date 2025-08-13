@@ -21,8 +21,7 @@ while player.location == exit.location: player.placeRandomly()
 print(f"""Welcome to this Python maze game!
 	  
 GOAL: Find the exit of a maze of unknown size. You may also mark up to {AVAILABLE_MARKS} rooms at once to help navigate the maze.
-Good luck!
-""")
+Good luck!""")
 
 try:
 	while player.location != exit.location: player.move()

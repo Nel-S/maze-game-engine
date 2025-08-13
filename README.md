@@ -1,4 +1,4 @@
-# Maze
+# Maze Game Engine
 This is a basic engine for maze games. Currently, it supports mazes between one and eight dimensions; a user; and exit points.
 
 This library has also served as my first GitHub repository (in 2021) and my first PyPi package (in 2025).

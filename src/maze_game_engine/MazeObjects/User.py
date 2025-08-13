@@ -1,7 +1,7 @@
-from MazeObjects.Agent import Agent
-from Utilities.Environment import Environment
-from Markers import Markers
-from Maze import Coordinate, Maze
+from ..MazeObjects.Agent import Agent
+from ..Utilities.Environment import Environment
+from ..Markers import Markers
+from ..Maze import Coordinate, Maze
 
 class User(Agent):
 	markers: Markers | None

@@ -1,7 +1,7 @@
 from random import Random
 
-from Utilities.Environment import Environment
-from Maze import Coordinate, Maze
+from ..Utilities.Environment import Environment
+from ..Maze import Coordinate, Maze
 
 class PointOfInterest:
 	name: str

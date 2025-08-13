@@ -1,8 +1,8 @@
 from typing import Literal, TypeAlias
 
-from Utilities.Environment import Environment
-from Maze import Coordinate, Maze
-from MazeObjects.PointOfInterest import PointOfInterest
+from ..Utilities.Environment import Environment
+from ..Maze import Coordinate, Maze
+from ..MazeObjects.PointOfInterest import PointOfInterest
 
 MovementType: TypeAlias = Literal["Static", 'Follower', 'Curious', 'Wanderer', 'Wary', 'User-controlled']
 

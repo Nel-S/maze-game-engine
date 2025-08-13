@@ -1,6 +1,6 @@
-from Utilities.Environment import Environment
-from Maze import Coordinate, Maze
-from Markers import Markers
-from MazeObjects.PointOfInterest import PointOfInterest
-from MazeObjects.Agent import MovementType, Agent
-from MazeObjects.User import User
+from .Utilities.Environment import Environment # type: ignore
+from .Maze import Coordinate, Maze # type: ignore
+from .Markers import Markers # type: ignore
+from .MazeObjects.PointOfInterest import PointOfInterest # type: ignore
+from .MazeObjects.Agent import MovementType, Agent # type: ignore
+from .MazeObjects.User import User # type: ignore

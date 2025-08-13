@@ -3,7 +3,7 @@ from numpy.typing import NDArray
 from random import Random
 from typing import Literal, TypeAlias
 
-from Utilities.Environment import Environment
+from .Utilities.Environment import Environment
 
 Coordinate: TypeAlias = tuple[int, ...]
 

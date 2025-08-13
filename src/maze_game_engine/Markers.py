@@ -1,4 +1,4 @@
-from Maze import Coordinate, Maze
+from .Maze import Coordinate, Maze
 
 class Markers:
 	count: int
